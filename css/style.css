@@ -226,6 +226,17 @@ main p {
         align-items: center;
     }
 
+    .imagenes {
+        width: 415px;
+        height: 1500px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes img {
+        width: 500px;
+    }
+
     main.imagenes img {
         width: 415px;
     }
@@ -257,15 +268,15 @@ main p {
         width: 300px;
     }
 
-.main-laempresa{
-    height: 2500px;
-}
+    .main-laempresa {
+        height: 2500px;
+    }
 
-.main-laempresa img{
-    width: 400px;
-    height: 500px;
-    padding-right: 200px;
-}
+    .main-laempresa img {
+        width: 400px;
+        height: 500px;
+        padding-right: 200px;
+    }
 
 }
 
@@ -290,7 +301,7 @@ footer {
 
 .main-laempresa {
     background-color: rgb(72, 147, 209);
-     color: white;
+    color: white;
     text-align: center;
 }
 
