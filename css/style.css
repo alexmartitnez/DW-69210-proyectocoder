@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+.imagenes {
+    display: flex;
+    width: 2500px;
+    height: 430px;
+}
+
+.imagenes img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.imagenes img:hover {
+    cursor: crosshair;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.arfrio {
+    text-align: center;
+    color: rgb(0, 3, 189);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header li {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header li {
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.imagenarfrio {
+    width: 250px;
+    height: 100px;
+}
+
+.index {
+
+    background-color: dodgerblue;
+}
+
+
+
+section iframe {
+    width: 2550px;
+    height: 1150px;
+}
+
+header img {
+    width: 250px;
+    height: 100px;
+}
+
+.insumos {
+    background-color: dodgerblue;
+}
+
+.laempresa {
+    background-color: dodgerblue;
+}
+
+.encontranosensanmiguel {
+    background-color: dodgerblue;
+}
+
+.preguntasfrecuentes {
+    background-color: dodgerblue;
+}
+
+.contacto {
+    background-color: dodgerblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+}
+
+nav {
+    width: 150%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.arfrio {
+    background-image: url(../img/aire-acondicionado.webp);
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+    background-color: slategray;
+}
+
+main p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+}
+
+
+
+.contenedor-grid img {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "imagen1 imagen2 imagen3"
+        "imagen4 imagen5 imagen6"
+        "imagen7 imagen8 imagen9";
+    grid-template-columns: 40% 40% 40%;
+    grid-template-rows: repeat(3. 200px);
+    justify-content: center;
+    justify-items: center;
+}
+
+.grid-titulo {
+    grid-area: titulo;
+    margin-top: 80px;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.grid-imagen-1 {
+    grid-area: imagen1;
+}
+
+.grid-imagen-2 {
+    grid-area: imagen2;
+}
+
+.grid-imagen-3 {
+    grid-area: imagen3;
+}
+
+.grid-imagen-4 {
+    grid-area: imagen4;
+}
+
+.grid-imagen-5 {
+    grid-area: imagen5;
+}
+
+.grid-imagen-6 {
+    grid-area: imagen6;
+}
+
+.grid-imagen-7 {
+    grid-area: imagen7;
+}
+
+.grid-imagen-8 {
+    grid-area: imagen8;
+}
+
+.grid-imagen-9 {
+    grid-area: imagen9;
+}
+
+@media (max-width:480px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 0px;
+
+
+    }
+
+    main {
+        height: 9000px;
+    }
+
+    main.imagenes {
+        width: 415px;
+        height: 1500px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main.imagenes img {
+        width: 415px;
+    }
+
+    .contenedor-grid {
+        grid-template-areas:
+            "titulo"
+            "titulo"
+            "titulo"
+            "imagen1"
+            "imagen2"
+            "imagen3"
+            "imagen4"
+            "imagen5"
+            "imagen6"
+            "imagen7"
+            "imagen8"
+            "imagen9";
+        justify-content: start;
+        justify-items: start;
+    }
+
+    .contenedor-grid img {
+        width: 400px;
+
+    }
+
+    footer img {
+        width: 300px;
+    }
+
+.main-laempresa{
+    height: 2500px;
+}
+
+.main-laempresa img{
+    width: 400px;
+    height: 500px;
+    padding-right: 200px;
+}
+
+}
+
+footer {
+    background-color: rgb(219, 219, 219);
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+
+/*la empresa-------------*/
+
+.contenedor-laempresa-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 100px;
+
+}
+
+.main-laempresa {
+    background-color: rgb(72, 147, 209);
+     color: white;
+    text-align: center;
+}
+
+.main-laempresa ul li {
+    list-style: none;
+}
+
+/*insumos----------------------*/
+
+.main-insumos img {
+    height: 100px;
+    width: 120px;
+
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-insumos {
+    margin-top: 10px;
+}
